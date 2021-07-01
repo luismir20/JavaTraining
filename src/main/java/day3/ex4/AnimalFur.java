@@ -2,8 +2,8 @@ package day3.ex4;
 
 class Animal {
 
-	private String furColor= "furColor";
-	
+	private String furColor = "furColor";
+
 	public void makeNoise() {
 		System.out.println("rarrr!");
 	}
@@ -15,14 +15,14 @@ class Animal {
 	public void setFurColor(String furColor) {
 		this.furColor = furColor;
 	}
-	
+
 	public void getMakeNoise() {
 		makeNoise();
 	}
 }
 
 class Dog extends Animal {
-	
+
 }
 
 public class AnimalFur {
@@ -31,5 +31,5 @@ public class AnimalFur {
 		System.out.println(dog.getFurColor());
 		dog.getMakeNoise();
 	}
-	
+
 }
