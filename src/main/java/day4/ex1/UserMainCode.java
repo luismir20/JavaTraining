@@ -7,17 +7,14 @@ public class UserMainCode {
 
 		Scanner scan = new Scanner(System.in);
 		String input = scan.next();
-		UserMainCode example = new UserMainCode();
 
-		if (example.checkCharacters(input) == 1) {
+		if (checkCharacters(input) == 1) {
 			System.out.println("Valid");
-		} else {
+		} else
 			System.out.println("Invalid");
-		}
-
 	}
 
-	public int checkCharacters(String input) {
+	public static int checkCharacters(String input) {
 		if (input.substring(0, 1).equals(input.substring(input.length() - 1))) {
 			return 1;
 		} else {
@@ -25,3 +22,4 @@ public class UserMainCode {
 		}
 	}
 }
+
