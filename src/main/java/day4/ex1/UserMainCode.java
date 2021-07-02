@@ -10,8 +10,10 @@ public class UserMainCode {
 
 		if (checkCharacters(input) == 1) {
 			System.out.println("Valid");
-		} else
+		} else {
 			System.out.println("Invalid");
+		}
+		scan.close();
 	}
 
 	public static int checkCharacters(String input) {
@@ -22,4 +24,3 @@ public class UserMainCode {
 		}
 	}
 }
-
